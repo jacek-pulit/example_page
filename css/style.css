@@ -343,6 +343,12 @@ header.site-header nav.main-navigation ul li:first-child:before {
   font-weight: 400;
   color: #112e0a;
 }
+.wrapper .site-content .type-page .entry-content p img.alignLeft {
+  float: left;
+  border: 1px solid #ced0c1;
+  padding: 2px;
+  margin: 0 1em 1em 0;
+}
 .wrapper .site-content .type-page .entry-content p img.alignRight {
   float: right;
   border: 1px solid #ced0c1;
