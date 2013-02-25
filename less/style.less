@@ -8,6 +8,13 @@ body {
     color: #0c2f18;
     font-family: Arial;
     font-size: 11px;
+
+    #page.site {
+        width: 751px - 2 * 3px; // - padding
+        margin: 23px auto;
+        padding: 3px;
+        background-color: #ffffff;
+    }
 }
 
 a, a:visited, a:active {
@@ -18,71 +25,202 @@ a:hover {
     text-decoration: underline;
 }
 
-#page.site {
-    width: 751px - 2 * 3px; // - padding
-    margin: 23px auto;
-    padding: 3px;
-    background-color: #ffffff;
 
+p {
+    font-family: Arial;
+    font-size: 11px;
+    color: #0c2f18;
+    margin-bottom: 1.5em;
+    line-height: 1.8em;
+}
 
-    header.site-header {
-        position: relative;
+h1, h2, h3, h4, h5 {
+    line-height: 1.5em;
+    margin-bottom: 0.4em;
+}
 
-        a.logo {
-            display: inline-block;
-            float: left;
-            font-size: 0;
-        }
+header.site-header {
+    position: relative;
 
-        .top-tree {
-            position: absolute;
-            height: 114px;
-            top: 0;
-            right: 0;
-            left: 201px;
-            background-color: #ddded4;
-            background-image: url('../img/top-tree.png');
-            background-position: 0 0;
-            background-repeat: no-repeat;
-        }
+    a.logo {
+        display: inline-block;
+        float: left;
+        font-size: 0;
+    }
 
-        nav.main-navigation {
-            float: left;
-            width: 100%;
-            margin-top: 2px;
-            background-color: #134343;
+    .top-tree {
+        position: absolute;
+        height: 114px;
+        top: 0;
+        right: 0;
+        left: 201px;
+        background-color: #ddded4;
+        background-image: url('../img/top-tree.png');
+        background-position: 0 0;
+        background-repeat: no-repeat;
+    }
 
-            ul {
-                text-align: center;
-                li {
-                    display: inline;
+    nav.main-navigation {
+        float: left;
+        width: 100%;
+        margin-top: 2px;
+        background-color: #134343;
 
-                    > a {
-                        display: inline-block;
-                        font-family:'Sabon-Roman';
-                        font-size: 12px;
-                        color: #fff;
-                        padding: 6px 9px 8px;
-                    }
+        ul {
+            text-align: center;
+            li {
+                display: inline;
 
-                    &:before {
-                        content: '|';
-                        font-family:'Sabon-Roman';
-                        font-size: 12px;
-                        color: #fff;
-                    }
-
-                    &:first-child:before {
-                        content: '';
-                    }
+                > a {
+                    display: inline-block;
+                    font-family: 'Sabon-Roman';
+                    font-size: 12px;
+                    color: #fff;
+                    padding: 6px 11px 8px;
                 }
 
+                &:before {
+                    content: '|';
+                    font-family: 'Sabon-Roman';
+                    font-size: 12px;
+                    color: #fff;
+                }
+
+                &:first-child:before {
+                    content: '';
+                }
             }
 
         }
 
     }
 
+}
 
+.wrapper {
+    position: relative;
+    margin-top: 2px;
+
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMcAAAABCAIAAADl1i04AAAAEUlEQVQoU2M4d+HgKBpF1EUARy3X6YUhez0AAAAASUVORK5CYII=);
+    background-position: 0 0;
+    background-repeat: repeat-y;
+
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0; bottom: 0;
+        width: 199px;
+        height: 395px;
+        background-image: url('../img/sidebar-gate.png');
+        background-position: 0 0;
+        background-repeat: no-repeat;
+    }
+
+    aside.site-sidebar {
+        float: left;
+        width: 199px - 2 * 14px; // padding
+        min-height: 20px;
+        padding: 26px 14px 395px;
+
+        ul {
+            li {
+                border-bottom: 1px solid #a0a296;
+                text-align: center;
+
+                > a {
+                    display: inline-block;
+                    width: 100%;
+                    font-family: 'Sabon-Roman';
+                    font-size: 14px;
+                    color: #51524c;
+                    padding: 8px 0;
+                }
+
+                &:first-child {
+                    border-top: 1px solid #a0a296;
+                }
+
+            }
+        }
+
+    }
+
+    .site-content {
+        float: right;
+        width: 544px - 2 * 43px; // padding
+        min-height: 100px;
+        padding: 31px 43px;
+
+        .type-page {
+            .entry-header {
+                h1.entry-title {
+                    font-family: 'Sabon-Roman';
+                    font-size: 22px;
+                    font-weight: 400;
+                    letter-spacing: 1px;
+                    color: #112e0a;
+
+                    &:first-letter {
+                        font-family: 'English111VivaceBT-Regular';
+                        font-size: 56px;
+                        font-weight: 400;
+                        color: #112e0a;
+                    }
+                }
+            }
+            .entry-content {
+                p {
+                    img.alignRight {
+                        float: right;
+                        border: 1px solid #ced0c1;
+                        padding: 2px;
+                        margin: 0 0 1em 1em;
+                    }
+                }
+
+                h4 {
+                    font-family: Georgia;
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #004868;
+                }
+            }
+        }
+
+    }
 
 }
+
+footer.site-footer {
+    width: 100%;
+    background-color: #134343;
+
+    ul {
+        text-align: center;
+        li {
+            display: inline;
+
+            > a {
+                display: inline-block;
+                font-family: Arial;
+                font-size: 11px;
+                color: #dedfd5;
+                padding: 3px 12px;
+            }
+
+            &:before {
+                content: '|';
+                font-family: 'Sabon-Roman';
+                font-size: 11px;
+                color: #dedfd5;
+            }
+
+            &:first-child:before {
+                content: '';
+            }
+        }
+
+    }
+}
+
