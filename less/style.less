@@ -3,6 +3,17 @@
 
 body {
     background-color: #889684;
+    color: #0c2f18;
+    font-family: Arial;
+    font-size: 11px;
+}
+
+a, a:visited, a:active {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 #page.site {
@@ -10,4 +21,61 @@ body {
     margin: 23px auto;
     padding: 3px;
     background-color: #ffffff;
+
+
+    header.site-header {
+        position: relative;
+
+        a.logo {
+            display: inline-block;
+            float: left;
+            font-size: 0;
+        }
+
+        .top-tree {
+            position: absolute;
+            height: 114px;
+            top: 0;
+            right: 0;
+            left: 201px;
+            background-color: #ddded4;
+            background-image: url('../img/top-tree.png');
+            background-position: 0 0;
+            background-repeat: no-repeat;
+        }
+
+        nav.main-navigation {
+            float: left;
+            width: 100%;
+            margin-top: 2px;
+            background-color: #134343;
+
+            ul {
+                li {
+                    float: left;
+
+                    > a {
+                        display: inline-block;
+                        color: #fff;
+                        padding: 5px 9px;
+                    }
+
+                    &:before {
+                        content: '|';
+                        color: #fff;
+                    }
+
+                    &:first-child:before {
+                        content: '';
+                    }
+                }
+
+            }
+
+        }
+
+    }
+
+
+
 }
