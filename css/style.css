@@ -1,6 +1,6 @@
 @import url('/font/sabon/sabon.css');
 
-@import url('/font/english111vivacebt/english111vivacebt.css');
+@import url('/font/english111_vivace_btregular/english111_vivace_btregular.css');
 html,
 body,
 div,
@@ -338,7 +338,7 @@ header.site-header nav.main-navigation ul li:first-child:before {
   color: #112e0a;
 }
 .wrapper .site-content .type-page .entry-header h1.entry-title:first-letter {
-  font-family: 'English111VivaceBT-Regular';
+  font-family: 'english111_vivace_btregular';
   font-size: 56px;
   font-weight: 400;
   color: #112e0a;
